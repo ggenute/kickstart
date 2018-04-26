@@ -34,7 +34,7 @@ class AgeCalculatorCommand extends Command
         $this
             ->setDescription('My command will calculate how old am I')
             ->addArgument('birthDate', InputArgument::REQUIRED, 'Your birth date')
-            ->addOption('adult', null, InputOption::VALUE_NONE, 'Am I an adult?');
+            ->addOption('adult', 'a', InputOption::VALUE_OPTIONAL, 'Am I an adult?');
     }
 
     /**
